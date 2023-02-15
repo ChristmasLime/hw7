@@ -55,14 +55,13 @@ public class Main {
     }
     public static void task5() {
         System.out.println("Задача 5");
-        int firstInstallment = 15000;
-        int deposit = (int) (firstInstallment * 0.07);
-        int i = 0;
-        for (int finish = 15000; finish <= 12000000; finish = finish + deposit) {
+        int deposit = 15000;
+        int i=0;
+        while ( deposit<12000000  ) {
             i++;
-            if (i % 6 == 0) {
-                System.out.println("Месяц " + i + " накопилось " + finish);
-            }
+            deposit+= deposit*0.07;
+            if(i%6==0)
+            System.out.println("Месяц " + i + " накопилось " + deposit);
         }
     }
     public static void task6() {
@@ -88,8 +87,11 @@ public class Main {
     }
     public static void task8() {
         System.out.println("Задача 8");
-        for (int i = 1896; i < 2100; i = i + 79) {
+        for (int i = 0; i < 2100; i = i + 79) {
+            if (i<=2000 && i > 1823)
             System.out.println(i);
+            if (i>2000 && i<2123)
+                System.out.println(i);
         }
     }
 }
