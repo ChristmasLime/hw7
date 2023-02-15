@@ -23,7 +23,6 @@ public class Main {
     }
     public static void task2() {
         System.out.println("Задача 2");
-
         int i = 1;
         while (i <= 10) {
             System.out.print(i+++" ");
@@ -46,12 +45,12 @@ public class Main {
     }
     public static void task4() {
         System.out.println("Задача 4");
-        int firstInstallment = 15000;
-        int deposit = (int) (firstInstallment * 0.07);
-        int i = 0;
-        for (int finish =15000; finish <=12000000;finish=finish+deposit ) {
+        int deposit = 15000;
+        int i=0;
+        while ( deposit<12000000  ) {
             i++;
-            System.out.println("Месяц " + i + " накопилось " + finish);
+            deposit+= deposit*0.07;
+            System.out.println("Месяц " + i + " накопилось " + deposit);
         }
     }
     public static void task5() {
