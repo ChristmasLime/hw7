@@ -30,9 +30,10 @@ public class Main {
         for (i = 10; i > 0; i--) {
             System.out.print(i+" ");
         }
+        System.out.println();
     }
     public static void task3() {
-        System.out.println("\nЗадача 3");
+        System.out.println("Задача 3");
         int allPeople = 12000000;
         int birthRate =17;
         int mortality =8;
